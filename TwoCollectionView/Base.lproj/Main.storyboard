@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7702" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vXZ-lx-hvc">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7701"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="ufC-wZ-h7g">
+            <objects>
+                <viewController id="vXZ-lx-hvc" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="jyV-Pf-zRb"/>
+                        <viewControllerLayoutGuide type="bottom" id="2fi-mo-0CV"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS" userLabel="view">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Lag-LR-Rv1" userLabel="topcontainer">
+                                <rect key="frame" x="113" y="20" width="375" height="375"/>
+                                <subviews>
+                                    <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" bounces="NO" pagingEnabled="YES" showsVerticalScrollIndicator="NO" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="9Be-ti-q7d">
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="375"/>
+                                        <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="0.0" minimumInteritemSpacing="0.0" id="Z7q-S4-YyA">
+                                            <size key="itemSize" width="375" height="375"/>
+                                            <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                            <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                            <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                        </collectionViewFlowLayout>
+                                        <cells/>
+                                    </collectionView>
+                                </subviews>
+                                <color key="backgroundColor" cocoaTouchSystemColor="scrollViewTexturedBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="centerX" secondItem="9Be-ti-q7d" secondAttribute="centerX" id="7xI-aD-6ff"/>
+                                    <constraint firstAttribute="height" constant="375" id="M35-Td-qsb"/>
+                                    <constraint firstAttribute="bottom" secondItem="9Be-ti-q7d" secondAttribute="bottom" id="MWy-L1-NWt"/>
+                                    <constraint firstItem="9Be-ti-q7d" firstAttribute="top" secondItem="Lag-LR-Rv1" secondAttribute="top" id="g1F-zi-MQD"/>
+                                    <constraint firstAttribute="trailing" secondItem="9Be-ti-q7d" secondAttribute="trailing" id="jJ7-4g-JN1"/>
+                                    <constraint firstAttribute="centerY" secondItem="9Be-ti-q7d" secondAttribute="centerY" id="m36-SG-9Zt"/>
+                                    <constraint firstAttribute="width" constant="375" id="vX0-cx-WE0"/>
+                                    <constraint firstItem="9Be-ti-q7d" firstAttribute="leading" secondItem="Lag-LR-Rv1" secondAttribute="leading" id="w4M-hB-ER7"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fvC-zM-5Nh" userLabel="downContainer">
+                                <rect key="frame" x="113" y="328" width="375" height="272"/>
+                                <subviews>
+                                    <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="lEO-p4-lJO">
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="272"/>
+                                        <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="10" minimumInteritemSpacing="10" id="bri-rM-Rfh">
+                                            <size key="itemSize" width="100" height="272"/>
+                                            <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                            <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                            <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                        </collectionViewFlowLayout>
+                                        <cells/>
+                                    </collectionView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="lEO-p4-lJO" firstAttribute="leading" secondItem="fvC-zM-5Nh" secondAttribute="leading" id="1qu-4a-WrS"/>
+                                    <constraint firstAttribute="height" constant="272" id="Evb-Lf-7pn"/>
+                                    <constraint firstAttribute="centerY" secondItem="lEO-p4-lJO" secondAttribute="centerY" id="LoD-ag-bkK"/>
+                                    <constraint firstAttribute="bottom" secondItem="lEO-p4-lJO" secondAttribute="bottom" id="QUQ-mw-wzk"/>
+                                    <constraint firstAttribute="centerX" secondItem="lEO-p4-lJO" secondAttribute="centerX" id="Rbo-UJ-znD"/>
+                                    <constraint firstItem="lEO-p4-lJO" firstAttribute="top" secondItem="fvC-zM-5Nh" secondAttribute="top" id="aKx-Ez-awk"/>
+                                    <constraint firstAttribute="width" constant="375" id="aOL-sO-gmt"/>
+                                    <constraint firstAttribute="trailing" secondItem="lEO-p4-lJO" secondAttribute="trailing" id="b1L-y6-GKv"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="centerX" secondItem="fvC-zM-5Nh" secondAttribute="centerX" id="9lQ-Y6-are"/>
+                            <constraint firstItem="Lag-LR-Rv1" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" id="fWX-bG-iFo"/>
+                            <constraint firstItem="2fi-mo-0CV" firstAttribute="top" secondItem="fvC-zM-5Nh" secondAttribute="bottom" id="lLN-oQ-GR7"/>
+                            <constraint firstAttribute="centerX" secondItem="Lag-LR-Rv1" secondAttribute="centerX" id="xyG-rk-rCz"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="btnCollectionView" destination="lEO-p4-lJO" id="ARs-Jb-PaD"/>
+                        <outlet property="topCollectionView" destination="9Be-ti-q7d" id="jZV-wE-RoA"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+</document>
